@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+Template Name: Shiphile
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Covid Monitoring System</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row0">
+    <header id="header" class="hoc clear center"> 
+    	
+      <!-- ################################################################################################ -->
+      <h1 id="logo"><a href="index.html">A Covid-19 Web Application To Monitor Social Distancing and Mask Detection</a></h1>
+      <br>
+      <img src="https://img.icons8.com/color/48/000000/distance.png"/>
+    	<img src="https://img.icons8.com/color/48/000000/protection-mask.png"/>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <div class="own" align="justify">
+  	
+  
+  <h4>Introduction</h4>
+     
+  <p >Covid-19 Pandemic dipped entire world in sorrow and grief, people are fighting for their lives. Vaccines are being given to people based on priority such as frontline worker, old age, etc. In this situation, the only way to prevent ourselves from getting infected is to follow precautionary measures like social distancing, wearing masks, keeping surroundings clean and hygiene, and more. To make everyone follow the precautionary measures effectively, an idea is proposed to monitor social distancing and masks detection. The system is designed using pre-trained models such as Dual Shot Face Detector(DSFD), Mobilenetv2, Resnet50 and YOLOv3 weights and also adding few layers on top of pre-trained models. This helps in detecting people wearing masks or not and calculate the distance between people in a single model. This can also be used to know the chances of getting infected by indicating them in different colored bounding boxes. It is further made interesting by collaborating the proposed design with Streamlit framework resulting as fine WebApp.</p>
+  </div>
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!--
+  <div class="wrapper row1">
+    <nav id="mainav" class="hoc clear"> 
+     
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a class="drop" href="#">Pages</a>
+          <ul>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/full-width.html">Full Width</a></li>
+            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+            <li><a href="pages/basic-grid.html">Basic Grid</a></li>
+            <li><a href="pages/font-icons.html">Font Icons</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Level 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Link Text</a></li>
+        <li><a href="#">Long Link Text</a></li>
+      </ul>
+      
+    </nav>
+  </div>-->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+ 
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="posts">
+      <figure class="group">
+        <div><a class="imgover"><img src="SDMD.png" alt=""></a></div>
+        <figcaption>
+          <h6 class="heading">  <b>Social Distancing and Mask Detection model</b> </h6>
+          <p>The image shows social distancing and mask detection monitoring system output screen. The system developed checks if 2 or more people are maintaining social distancing or not and it also checks if any individual is wearing mask or not. The bounding boxes are displayed on those detected person based on the conditions shown in the navigation bar and also it displays the <b>safe and unsafe </b>count along with <b>masked, unmasked, and not recognized </b>out of them.</p>
+        </figcaption>
+      </figure>
+      <!-- ################################################################################################ -->
+      <figure class="group">
+        <div id="my-img"><a class="imgover"><img src="1.png" alt=""></a><p>Hover on the image</p></div>
+
+        <figcaption>
+
+
+
+          <h6 class="heading"><b>Real Time Mask Detection Monitoring system</b></h6>
+          <p>In the image, person didn’t wear a mask hence it applies Red bounding box along with the prediction score tells that he is at risk and when we hover on the image we can see a person wearing mask indicated with green bounding box. </p>
+          
+        </figcaption>
+      </figure>
+      <figure class="group">
+        <div id="my-img1"><a class="imgover"><img src="3.png" alt=""></a><p>Hover on the image</p></div>
+
+        <figcaption>
+        	
+
+
+          <h6 class="heading"><b>Real Time Social Distancing Monitoring system</b></h6>
+          <p>Real-time social distancing outputs are shown. In the image only one person is there, hence model captured and gave a human count as 1, distance violation as 0. When we hover on the image an another image is shown, it is detecting two persons. As the distance between them is more than the 2 meters or threshold value 150 pixels. It marked them with green bounding box considering as safe and distance violation as 0</p>
+          
+        </figcaption>
+      </figure>
+      <figure class="group">
+        <div id="my-img2"><a class="imgover"><img src="5.png" alt=""></a><p>Hover on the image</p></div>
+
+        <figcaption>
+        	
+
+
+          <h6 class="heading">  <b>Real Time Covid-19 Cases Tracker</b> </h6>
+          <p>Figure shows the covid tracker system. It helps to collect the real-time data on covid-19 cases. It provides the count of the people of different countries who are infected, recovered and died.When we hover on the figure another image is displayed that shows a comparative study of two countries on the cases been confirmed </p>
+          
+        </figcaption>
+      </figure>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+	<ul class="nospace group team">
+      <li class="one_half first">
+	
+		<video width="650" height="700" controls>
+  <source src="2.mp4" type="video/mp4">
+</video>
+
+</li>
+      <li class="one_half">
+	
+	
+		<video width="650" height="700" controls>
+  <source src="1.mp4" type="video/mp4">
+</video>
+
+</li>
+</ul>
+<br>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <section class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading font-x3">ABOUT US</h6>
+      
+    </div>
+    <center>
+    <ul class="nospace group team">
+      <li class="one_third first">
+        <figure><a class="imgover" href="#"><img src="subhash.png" alt=""></a>
+          <figcaption><strong class="heading">SUBHASH S</strong> </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a class="imgover" href="#"><img src="sneha.png" alt=""></a>
+          <figcaption><strong class="heading">SNEHA K</strong> </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a class="imgover" href="#"><img src="ullas.png" alt=""></a>
+          <figcaption><strong class="heading">ULLAS A</strong> </figcaption>
+        </figure>
+      </li>
+      
+    </ul>
+    </center>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
